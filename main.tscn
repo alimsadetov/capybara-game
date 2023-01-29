@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Безымянный.png" type="Texture" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ui" type="Node2D" parent="."]
+
+[node name="Безымянный" type="Sprite" parent="ui"]
+position = Vector2( 157, 83 )
+scale = Vector2( 0.23125, 0.174074 )
+texture = ExtResource( 1 )
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial"]
+mesh = SubResource( 1 )
+
+[node name="Camera" type="Camera" parent="Spatial"]
+transform = Transform( 0.974472, -0.0531494, 0.218127, 0, 0.971574, 0.236736, -0.224509, -0.230693, 0.946772, 1.673, 2, 5.094 )
